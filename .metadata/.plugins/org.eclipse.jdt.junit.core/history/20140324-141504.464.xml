@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StartTest" project="NorthcottzTest" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="sony_ericsson-sk17i-BX902TMHKN" time="1.827">
+    <testsuite name="com.mobileapps.northcottz.test.StartTest" time="1.827">
+      <testcase name="testField " classname="com.mobileapps.northcottz.test.StartTest" time="1.827"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StartTest" project="NorthcottzTest" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="sony_ericsson-sk17i-BX902TMHKN" time="0.0">
+    <testsuite name="junit.framework.TestSuite.1" time="0.0">
+      <testcase name="warning " classname="junit.framework.TestSuite.1" time="0.0">
+        <failure>junit.framework.AssertionFailedError: Class com.mobileapps.northcottz.test.StartTest has no public constructor TestCase(String name) or TestCase()&#13;
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)&#13;
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)&#13;
+at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:545)&#13;
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1551)&#13;
+
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

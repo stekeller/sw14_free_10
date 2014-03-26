@@ -1,0 +1,7 @@
+package com.mobileapps.northcottz.test;
+
+import junit.framework.TestCase;
+
+public class StartTest extends TestCase {
+
+}

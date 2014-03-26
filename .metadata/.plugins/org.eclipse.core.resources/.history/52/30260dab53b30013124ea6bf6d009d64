@@ -1,0 +1,44 @@
+package com.mobileapps.northcottz.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+import android.util.Log;
+
+import com.mobileapps.northcottz.*;
+import com.robotium.solo.Solo;
+
+import junit.framework.TestCase;
+//TestCase
+public class StartTest extends ActivityInstrumentationTestCase2<HomeScreen> {
+
+	public StartTest(Class<HomeScreen> activityClass) {
+		super(activityClass);
+	}
+	
+	private Solo mySolo;
+	//throws Exception
+	protected void setUp()  {
+		
+		Log.i("TEST", "SetUp");
+		
+		try {
+			super.setUp();
+		} catch (Exception e) {
+			Log.d("Exception", "im setUp: " + e.toString());
+		}
+		mySolo = new Solo(getInstrumentation(), getActivity());
+		
+	}
+	
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+	
+	
+	public void testField(){
+		mySolo.clickOnButton("Button");
+		//mySolo.clickOnButton("Button");
+		//mySolo.clickOnButton("Button");
+		//mySolo.getText("Hello world!");	
+	}
+
+}

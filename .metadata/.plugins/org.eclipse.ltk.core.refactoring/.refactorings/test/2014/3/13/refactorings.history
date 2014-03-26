@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extracts string &apos;bin da!&apos; into R.string.bin_da_" description="Extracts string &apos;bin da!&apos; into R.string.bin_da_" file="/test/res/layout/activity_main.xml" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="EDIT_SOURCE" proj="/test" rplc-all-java="false" rplc-all-xml="false" sel-end="614" sel-start="593" stamp="1395734871440" tok-esc="bin da!" xml-attr-name="android:text"/>
+</session>

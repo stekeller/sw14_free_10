@@ -1,0 +1,29 @@
+package com.mobileapps.northcottz.test;
+
+import com.mobileapps.northcottz.HomeScreen;
+import com.robotium.solo.Solo;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+public class HomeScreenTest extends ActivityInstrumentationTestCase2<HomeScreen> {
+
+	private Solo mySolo;
+	
+	public HomeScreenTest(String name) {
+		super(HomeScreen.class);
+	}
+
+	protected void setUp() throws Exception {
+		super.setUp();
+		
+		mySolo = new Solo(getInstrumentation(), getActivity());
+		
+	}
+
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+	
+	
+
+}
