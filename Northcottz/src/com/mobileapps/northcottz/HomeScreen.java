@@ -15,7 +15,7 @@ public class HomeScreen extends Activity implements OnClickListener{
 	private Button buttonTwoPlayer;
 	private Button buttonTutorial;
 	
-	private TextView textView;
+	private TextView textTitle;
 	
 	private int counter;
 
@@ -24,14 +24,14 @@ public class HomeScreen extends Activity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         
-        buttonSinglePlayer = (Button) this.findViewById(R.id.buttonSinglePlayer);
+//        buttonSinglePlayer = (Button) this.findViewById(R.id.buttonSinglePlayer);
         buttonTwoPlayer = (Button) this.findViewById(R.id.buttonTwoPlayer);
-        buttonTutorial = (Button) this.findViewById(R.id.buttonTutorial);
-        textView = (TextView) this.findViewById(R.id.textView1);
+//        buttonTutorial = (Button) this.findViewById(R.id.buttonTutorial);
+        textTitle = (TextView) this.findViewById(R.id.textView1);
         
-        buttonSinglePlayer.setOnClickListener(this);
+//        buttonSinglePlayer.setOnClickListener(this);
         buttonTwoPlayer.setOnClickListener(this);
-        buttonTutorial.setOnClickListener(this);
+//        buttonTutorial.setOnClickListener(this);
         
         //test
         counter = 0;
@@ -52,9 +52,9 @@ public class HomeScreen extends Activity implements OnClickListener{
 		//Button clicked = (Button) v;
 		
 		if ( counter % 2 == 0 )
-			textView.setText("Hui Buh");
+			textTitle.setText("Hui Buh");
 		else
-			textView.setText("Muh Kuh");
+			textTitle.setText("Muh Kuh");
 		
 		counter += 1;
 		

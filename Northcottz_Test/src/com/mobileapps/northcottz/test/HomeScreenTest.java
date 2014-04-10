@@ -1,6 +1,7 @@
 package com.mobileapps.northcottz.test;
 
 import com.mobileapps.northcottz.HomeScreen;
+import com.mobileapps.northcottz.R;
 import com.robotium.solo.Solo;
 
 import android.test.ActivityInstrumentationTestCase2;
@@ -10,7 +11,7 @@ public class HomeScreenTest extends ActivityInstrumentationTestCase2<HomeScreen>
 
 	private Solo mySolo;
 	
-	public HomeScreenTest(String name) {
+	public HomeScreenTest() {
 		super(HomeScreen.class);
 	}
 
@@ -30,14 +31,21 @@ public class HomeScreenTest extends ActivityInstrumentationTestCase2<HomeScreen>
 	
 	
 	public void testButtons(){
-		mySolo.clickOnButton("buttonSinglePlayer");
-		mySolo.clickOnButton("buttonTwoPlayer");
-		mySolo.clickOnButton("buttonTutorial");
-
+//		mySolo.clickOnView(mySolo.getView());
+		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
+		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
+		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
+		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
+		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
+		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
+//		mySolo.clickOnButton("buttonTwoPlayer");
+//		mySolo.clickOnButton("buttonTwoPlayer");
+//		mySolo.clickOnButton("buttonTwoPlayer");
+//		mySolo.clickOnButton("buttonTwoPlayer");
+		Log.d("hjkhgku", "jmkldsjQ");
 	}
 	
 	public void testCheckBox(){
-		mySolo.clickOnCheckBox(0);
 	}
 	
 
