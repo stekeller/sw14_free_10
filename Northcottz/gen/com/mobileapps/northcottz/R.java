@@ -1095,17 +1095,15 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050042;
+        public static final int action_settings=0x7f050040;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
-        public static final int buttonSinglePlayer=0x7f05003e;
-        public static final int buttonTutorial=0x7f050040;
-        public static final int buttonTwoPlayer=0x7f05003f;
-        public static final int checkBoxSound=0x7f05003c;
+        public static final int buttonTwoPlayer=0x7f05003d;
+        public static final int checkBoxSound=0x7f05003e;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
-        public static final int container=0x7f050041;
+        public static final int container=0x7f05003f;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
@@ -1145,7 +1143,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int textView1=0x7f05003d;
+        public static final int textTitle=0x7f05003c;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
         public static final int up=0x7f050021;
@@ -1203,13 +1201,16 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
         public static final int activity_home_screen=0x7f030018;
-        public static final int activity_play_screen=0x7f030019;
-        public static final int fragment_play_screen=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_main=0x7f030019;
+        public static final int activity_play_screen=0x7f03001a;
+        public static final int fragment_main=0x7f03001b;
+        public static final int fragment_play_screen=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int home_screen=0x7f0c0000;
-        public static final int play_screen=0x7f0c0001;
+        public static final int main=0x7f0c0001;
+        public static final int play_screen=0x7f0c0002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1254,7 +1255,10 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_settings=0x7f0a000e;
         public static final int app_name=0x7f0a000d;
-        public static final int hello_world=0x7f0a000f;
+        public static final int btn_two_player=0x7f0a000f;
+        public static final int hello_world=0x7f0a0011;
+        public static final int sound=0x7f0a0013;
+        public static final int title_activity_main=0x7f0a0012;
         public static final int title_activity_play_screen=0x7f0a0010;
     }
     public static final class style {
@@ -1283,7 +1287,7 @@ containing a value of this type.
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f0b008c;
+        public static final int AppThemeNoActionBar=0x7f0b008c;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;

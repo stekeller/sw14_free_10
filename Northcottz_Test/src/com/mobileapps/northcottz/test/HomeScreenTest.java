@@ -31,22 +31,20 @@ public class HomeScreenTest extends ActivityInstrumentationTestCase2<HomeScreen>
 	
 	
 	public void testButtons(){
-//		mySolo.clickOnView(mySolo.getView());
+		Log.d("testButtons", "testing buttons");
 		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
-		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
-		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
-		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
-		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
-		mySolo.clickOnView(mySolo.getView(R.id.buttonTwoPlayer));
-//		mySolo.clickOnButton("buttonTwoPlayer");
-//		mySolo.clickOnButton("buttonTwoPlayer");
-//		mySolo.clickOnButton("buttonTwoPlayer");
-//		mySolo.clickOnButton("buttonTwoPlayer");
-		Log.d("hjkhgku", "jmkldsjQ");
+		mySolo.goBack();
 	}
 	
 	public void testCheckBox(){
+		Log.d("testCheckBox", "testing checkboxes");
+		mySolo.clickOnCheckBox(0);
+		// TODO check if on?!?
+		mySolo.clickOnCheckBox(0);
 	}
 	
+	public void testMove(){
+		Log.d("testMove", "make a move");
+	}
 
 }

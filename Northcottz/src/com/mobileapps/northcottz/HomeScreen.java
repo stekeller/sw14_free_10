@@ -1,40 +1,27 @@
 package com.mobileapps.northcottz;
 
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.EditText;
 
-public class HomeScreen extends Activity implements OnClickListener{
-	
-	private Button buttonSinglePlayer;
-	private Button buttonTwoPlayer;
-	private Button buttonTutorial;
-	
-	private TextView textTitle;
-	
-	private int counter;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+
+public class HomeScreen extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         
-//        buttonSinglePlayer = (Button) this.findViewById(R.id.buttonSinglePlayer);
-        buttonTwoPlayer = (Button) this.findViewById(R.id.buttonTwoPlayer);
-//        buttonTutorial = (Button) this.findViewById(R.id.buttonTutorial);
-        textTitle = (TextView) this.findViewById(R.id.textView1);
-        
-//        buttonSinglePlayer.setOnClickListener(this);
-        buttonTwoPlayer.setOnClickListener(this);
-//        buttonTutorial.setOnClickListener(this);
-        
-        //test
-        counter = 0;
+//        Button buttonTwoPlayer = (Button) this.findViewById(R.id.buttonTwoPlayer);
+//        TextView textTitle = (TextView) this.findViewById(R.id.textTitle);
     }
 
 
@@ -44,23 +31,23 @@ public class HomeScreen extends Activity implements OnClickListener{
         getMenuInflater().inflate(R.menu.home_screen, menu);
         return true;
     }
-
-
-	@Override
-	public void onClick(View v) {
-		
-		//Button clicked = (Button) v;
-		
-		if ( counter % 2 == 0 )
-			textTitle.setText("Hui Buh");
-		else
-			textTitle.setText("Muh Kuh");
-		
-		counter += 1;
-		
-		
-	}
     
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+	public void startGame(View view){
+		Intent intent = new Intent(this, PlayScreenActivity.class);
+		startActivity(intent);
+	}
     
     
 }
