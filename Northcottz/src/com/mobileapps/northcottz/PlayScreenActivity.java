@@ -1,23 +1,43 @@
 package com.mobileapps.northcottz;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
+import com.mobileapps.northcottz.views.BoardGraphic;
+
 import android.support.v4.app.Fragment;
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemClickListener;
 import android.os.Build;
 
 public class PlayScreenActivity extends Activity {
+	GridView gridView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_play_screen);
+		setContentView(new BoardGraphic(this));
+//		setContentView(R.layout.activity_play_screen);
+		
+		
+//		gridView = (GridView) findViewById(R.id.gridview); 
+//		gridView.setAdapter(new ImageAdapter(this));
+//		gridView.setOnItemClickListener(
+//				new OnItemClickListener() {
+//					public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+//			            Toast.makeText(getApplicationContext(), "" + position, Toast.LENGTH_SHORT).show();
+//			        }
+//		   		}
+//		   );
 	}
 
 	@Override
@@ -55,6 +75,53 @@ public class PlayScreenActivity extends Activity {
 					container, false);
 			return rootView;
 		}
+	}
+	
+	public class ImageAdapter extends BaseAdapter{
+		private Context mContext;
+		
+		public ImageAdapter(Context c) {
+			mContext = c;
+		}
+
+		@Override
+		public int getCount() {
+			return 1;
+		}
+
+		@Override
+		public Object getItem(int position) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public long getItemId(int position) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			ImageView imageView;
+	        if (convertView == null) {  // if it's not recycled, initialize some attributes
+	            imageView = new ImageView(mContext);
+	            imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
+	            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+	            imageView.setPadding(8, 8, 8, 8);
+	        } else {
+	            imageView = (ImageView) convertView;
+	        }
+
+	        imageView.setImageResource(mThumbIds[position]);
+	        return imageView;
+		}
+		// references to our images
+	    private Integer[] mThumbIds = {
+	            R.drawable.sample_0, R.drawable.sample_1,
+	            R.drawable.sample_2, R.drawable.sample_3
+	    };
+		
 	}
 
 }
