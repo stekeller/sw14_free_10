@@ -39,7 +39,6 @@ public class HomeScreenTest extends ActivityInstrumentationTestCase2<HomeScreen>
 	public void testCheckBox(){
 		Log.d("testCheckBox", "testing checkboxes");
 		mySolo.clickOnCheckBox(0);
-		// TODO check if on?!?
 		mySolo.clickOnCheckBox(0);
 	}
 	

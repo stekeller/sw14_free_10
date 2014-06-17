@@ -239,6 +239,7 @@ int drawable sample_0 0x7f020058
 int drawable sample_1 0x7f020059
 int drawable sample_2 0x7f02005a
 int drawable sample_3 0x7f02005b
+int drawable tux 0x7f02005c
 int id action_bar 0x7f05001c
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001b
@@ -358,6 +359,7 @@ int string hello_world 0x7f0a0011
 int string sound 0x7f0a0013
 int string title_activity_main 0x7f0a0012
 int string title_activity_play_screen 0x7f0a0010
+int string title_activity_winner 0x7f0a0014
 int style AppBaseTheme 0x7f0b008b
 int style AppThemeNoActionBar 0x7f0b008c
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063

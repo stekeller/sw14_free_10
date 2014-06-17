@@ -8,5 +8,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="sound">Sound ON/OFF</string>
+    <string name="title_activity_winner">WinnerActivity</string>
 
 </resources>

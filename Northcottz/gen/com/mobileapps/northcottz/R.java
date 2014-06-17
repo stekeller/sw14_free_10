@@ -1086,6 +1086,7 @@ containing a value of this type.
         public static final int sample_1=0x7f020059;
         public static final int sample_2=0x7f02005a;
         public static final int sample_3=0x7f02005b;
+        public static final int tux=0x7f02005c;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1264,6 +1265,7 @@ containing a value of this type.
         public static final int sound=0x7f0a0013;
         public static final int title_activity_main=0x7f0a0012;
         public static final int title_activity_play_screen=0x7f0a0010;
+        public static final int title_activity_winner=0x7f0a0014;
     }
     public static final class style {
         /** 
