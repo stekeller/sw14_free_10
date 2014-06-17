@@ -1,6 +1,7 @@
 package com.mobileapps.northcottz;
 
 import java.util.Iterator;
+import java.util.Random;
 
 import com.mobileapps.northcottz.views.BoardGraphic.player;
 
@@ -10,10 +11,10 @@ import android.widget.Toast;
 public class GameLogic {
 
 	private Row[] rows;
-	private int cols;
+	private int numCols;
 
 	public GameLogic(int numRows, int numCols, float gap, float cell_size) {
-		this.cols = numCols;
+		this.numCols = numCols;
 		this.rows = new Row[numRows];
 		for (int i = 0; i < numRows; i++) {
 			this.rows[i] = new Row(numCols);
@@ -28,13 +29,21 @@ public class GameLogic {
 				getField(x, y).setInRow(y);
 			}
 		}
-
+		
 		getField(0, 0).setOnField(player.ANDRO);
 		getField(0, 1).setOnField(player.ANDRO);
 		getField(0, 2).setOnField(player.ANDRO);
 		getField(1, 0).setOnField(player.TUX);
 		getField(1, 1).setOnField(player.TUX);
 		getField(2, 2).setOnField(player.TUX);
+	}
+	
+	private void initializePositions(){
+		Random r = new Random();
+		
+		for (Row row : rows) {
+			// TODO set random p1 and random p2
+		}
 	}
 
 	public boolean makeMove(int x, int y, Field start, player activePlayer) {
